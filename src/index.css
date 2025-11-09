@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import "tailwindcss";
+
+@theme inline {
+  --font-great: "Great Vibes", cursive;
+  --font-body: "Open Sans", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+
+  --color-primary: #ee9cae;
+
+  --color-secondary-forground: #f7f1eb;
+  --color-dark-text: #493739;
+  --color-subtle: #8c7f81;
+  --color-accent: #fbe7ec;
+}
+body {
+  @apply font-body bg-secondary-forground;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-playfair;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply font-body;
+}
+
+.section {
+  @apply p-4 md:py-8 lg:py-16;
+}
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+.paragraph {
+  @apply text-xl text-subtle;
+}
