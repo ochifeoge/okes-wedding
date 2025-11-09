@@ -1,3 +1,4 @@
+import ImageGallery from "./components/ImageGallery";
 import AppProvider from "./components/AppProvider";
 import FloatingMenu from "./components/FloatingMenu";
 import Hero from "./components/Hero";
@@ -12,6 +13,7 @@ const App = () => {
       <FloatingMenu />
       <Hero />
       <OurStory />
+      <ImageGallery />
       <Info />
       <WishList />
       <QrCodeSection />

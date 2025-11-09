@@ -54,7 +54,7 @@ const WeddingMusic = () => {
       {!playing && (
         <div
           ref={overlayRef}
-          className="fixed inset-0 cursor-pointer bg-gradient-to-b from-black/80 via-black/30 to-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-50"
+          className="fixed inset-0 cursor-pointer bg-linear-to-b from-black/80 via-black/30 to-black/80 backdrop-blur-sm flex flex-col items-center justify-center z-50"
           onClick={handlePlay}
         >
           <CiMusicNote1

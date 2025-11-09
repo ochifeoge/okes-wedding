@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   FaMusic,
   FaPause,
@@ -17,7 +16,7 @@ const FloatingMenu = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 bg-white/20 backdrop-blur-md rounded-full p-3 flex flex-col gap-4 shadow-lg z-50">
+    <div className="fixed bottom-6 right-6 bg-white/20 backdrop-blur-md rounded-full p-3 flex  items-center flex-col gap-4 shadow-lg z-50">
       <button
         onClick={() => scrollToSection("hero")}
         className="text-primary cursor-pointer  hover:scale-[1.3] transition"
@@ -56,9 +55,9 @@ const FloatingMenu = () => {
         } hover:text-pink-300 transition`}
       >
         {isPlaying ? (
-          <FaPause size={20} onClick={handlePause} />
+          <FaPause size={28} onClick={handlePause} />
         ) : (
-          <FaMusic size={20} onClick={handlePlay} />
+          <FaMusic size={28} onClick={handlePlay} />
         )}
       </button>
     </div>

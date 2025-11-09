@@ -44,7 +44,7 @@ const QrCodeSection = () => {
 
       <div className="flex justify-center">
         <QRCodeCanvas
-          value="https://google.com"
+          value="https://okes-wedding.vercel.app/"
           size={160}
           bgColor="#fff"
           fgColor="#E91E63"

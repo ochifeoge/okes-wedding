@@ -85,7 +85,7 @@ const Info = () => {
   return (
     <section ref={sectionRef} className="container section" id="info">
       <div className="pt-20 text-center space-y-4 mb-8">
-        <h3 className="info-heading font-great text-primary text-8xl">
+        <h3 className="info-heading font-great text-primary text-6xl md:text-8xl">
           Join us for our special day
         </h3>
         <p className="info-sub text-subtle">
