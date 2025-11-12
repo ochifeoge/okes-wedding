@@ -25,7 +25,7 @@ const ImageGallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="relative py-16 bg-linear-to-b from-pink-50 to-white overflow-hidden">
+    <div className="relative container  py-16 bg-linear-to-b from-pink-50 to-white overflow-hidden">
       <h2 className="text-center font-playfair text-3xl md:text-4xl text-gray-800 mb-10">
         Our Love Story in Pictures 💖
       </h2>

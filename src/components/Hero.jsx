@@ -26,7 +26,7 @@ const Hero = () => {
     gsap.to(bouquetRef.current, {
       yPercent: 200,
 
-      ease: "power",
+      ease: "linear",
       scrollTrigger: {
         trigger: heroRef.current,
         start: "top top",
@@ -38,7 +38,7 @@ const Hero = () => {
       rotation: 360,
       duration: 12, // speed of spin
       ease: "linear",
-      repeat: true,
+      repeat: -1,
     });
     gsap.to(titleRef.current, {
       y: -100,
@@ -87,9 +87,9 @@ const Hero = () => {
       {/* Hero Text */}
       <h1
         ref={titleRef}
-        className="text-center text-white -mt-42! font-great text-5xl sm:text-6xl md:text-7xl px-4 z-20 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+        className="text-center text-white -mt-20 md:-mt-42! font-great text-5xl sm:text-6xl md:text-7xl px-4 z-20 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
       >
-        We are getting married 💍
+        Whispered in vows, now sung in joy.
       </h1>
 
       {/* Optional scroll indicator */}
