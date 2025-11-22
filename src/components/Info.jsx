@@ -17,14 +17,14 @@ const information = [
   {
     icon: <RiTimeLine />,
     title: "Time",
-    description: "12:00 PM",
+    description: "1:00 PM",
     extraDescription: "Ceremony followed by reception",
   },
   {
     icon: <IoLocationOutline />,
     title: "Where",
-    description: "The Garden Estate",
-    extraDescription: "123 Rose Lane, Paradise Valley",
+    description: "K16 Palm Beach Hotel, Edjeba",
+    extraDescription: "Along NNPC Housing omplex Road, Delta State",
   },
 ];
 

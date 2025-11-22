@@ -6,8 +6,26 @@ const AppContext = createContext();
 function AppProvider({ children }) {
   const [playing, setPlaying] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-
   const audioRef = useRef(null);
+
+  const [wasPlayingBeforeModal, setWasPlayingBeforeModal] = useState(false);
+
+  function pauseForModal() {
+    if (isPlaying) {
+      setWasPlayingBeforeModal(true);
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  }
+
+  function resumeAfterModal() {
+    if (wasPlayingBeforeModal) {
+      audioRef.current.play();
+      setIsPlaying(true);
+      setWasPlayingBeforeModal(false);
+    }
+  }
+
   const handlePlay = () => {
     audioRef.current.play();
     setPlaying(true);
@@ -21,7 +39,15 @@ function AppProvider({ children }) {
 
   return (
     <AppContext.Provider
-      value={{ handlePlay, handlePause, isPlaying, playing, audioRef }}
+      value={{
+        handlePlay,
+        handlePause,
+        pauseForModal,
+        resumeAfterModal,
+        isPlaying,
+        playing,
+        audioRef,
+      }}
     >
       {children}
     </AppContext.Provider>

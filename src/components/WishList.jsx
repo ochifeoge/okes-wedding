@@ -2,6 +2,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import GiftOptions from "./GiftOptions";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,12 +43,7 @@ const WishList = () => {
         us further, here’s a simple way to send a token of love.
       </p>
 
-      <button
-        className="bg-pink-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-700 transition"
-        onClick={() => (window.location.href = "https://www.amazon.com/")}
-      >
-        Send a Gift
-      </button>
+      <GiftOptions />
     </section>
   );
 };
