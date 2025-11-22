@@ -117,7 +117,7 @@ const ImageGallery = () => {
           prevEl: ".swiper-button-prev",
         }}
         autoplay={{
-          delay: 6000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}

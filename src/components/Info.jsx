@@ -23,8 +23,8 @@ const information = [
   {
     icon: <IoLocationOutline />,
     title: "Where",
-    description: "K16 Palm Beach Hotel, Edjeba",
-    extraDescription: "Along NNPC Housing omplex Road, Delta State",
+    description: "On Iv",
+    extraDescription: "",
   },
 ];
 
