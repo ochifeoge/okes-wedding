@@ -17,6 +17,16 @@ const App = () => {
       <Info />
       <WishList />
       <QrCodeSection />
+      <footer className="w-full text-center py-4 text-sm text-pink-500">
+        Made with ❤️ by
+        <a
+          href="https://wa.me/2349022517371"
+          target="_blank"
+          className="underline ml-1 hover:text-pink-600"
+        >
+          Ochife
+        </a>
+      </footer>
     </AppProvider>
   );
 };

@@ -1,5 +1,6 @@
 export const bgImg = "./oke.jpg";
 
+export const firstTime = "./images/firstTime.jpeg";
 export const image1 = "./images/image1.jpeg";
 export const image2 = "./images/image2.jpeg";
 export const image3 = "./images/image3.jpeg";

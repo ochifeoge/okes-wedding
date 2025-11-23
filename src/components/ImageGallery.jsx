@@ -27,11 +27,13 @@ import {
   video2,
   video3,
   video4,
+  firstTime,
 } from "./imports";
 import { useProvider } from "./AppProvider";
 
 const media = [
-  { type: "image", src: image1, caption: "The beginning of everything ❤️" },
+  { type: "image", src: firstTime, caption: "The beginning of everything ❤️" },
+  { type: "image", src: image1, caption: "A glimps of couple goals ❤️" },
   {
     type: "video",
     src: video1,

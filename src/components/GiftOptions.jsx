@@ -14,9 +14,10 @@ const GiftOptions = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {/* Flutterwave */}
         <button
-          onClick={() =>
-            window.open("https://flutterwave.com/pay/yourlink", "_blank")
-          }
+          onClick={() => {
+            alert("coming soon");
+            // window.open("https://flutterwave.com/pay/yourlink", "_blank")
+          }}
           className="flex flex-col items-center gap-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border border-pink-100 hover:bg-pink-100/40"
         >
           <FaCreditCard size={28} className="text-pink-600" />
@@ -27,7 +28,7 @@ const GiftOptions = () => {
 
         {/* PayPal */}
         <button
-          onClick={() => window.open("https://paypal.me/yourpaylink", "_blank")}
+          onClick={() => window.open("https://paypal.me/okofficial", "_blank")}
           className="flex flex-col items-center gap-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border border-pink-100 hover:bg-pink-100/40"
         >
           <FaPaypal size={28} className="text-blue-600" />
@@ -37,7 +38,10 @@ const GiftOptions = () => {
         {/* Amazon Wishlist */}
         <button
           onClick={() =>
-            window.open("https://amazon.com/yourwishlist", "_blank")
+            window.open(
+              "https://www.amazon.co.uk/wedding/registry/6O4RJC53PB3O",
+              "_blank"
+            )
           }
           className="flex flex-col items-center gap-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition cursor-pointer border border-pink-100 hover:bg-pink-100/40"
         >
