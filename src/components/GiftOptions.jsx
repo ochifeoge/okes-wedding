@@ -1,4 +1,5 @@
 import { FaPaypal, FaAmazon, FaCreditCard } from "react-icons/fa";
+import BankCard from "./BankCard";
 
 const GiftOptions = () => {
   return (
@@ -13,7 +14,7 @@ const GiftOptions = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {/* Flutterwave */}
-        <button
+        {/* <button
           onClick={() => {
             alert("coming soon");
             // window.open("https://flutterwave.com/pay/yourlink", "_blank")
@@ -24,7 +25,8 @@ const GiftOptions = () => {
           <span className="text-gray-800 font-medium">
             Flutterwave (Nigeria)
           </span>
-        </button>
+        </button> */}
+        <BankCard />
 
         {/* PayPal */}
         <button
